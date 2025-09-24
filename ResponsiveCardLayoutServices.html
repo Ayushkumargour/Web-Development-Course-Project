@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services</title>
+  <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+header p {
+  margin-top: 10px;
+  color: #666;
+}
+
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 20px;
+  flex: 1 1 calc(50% - 20px); 
+  min-width: 280px;
+  transition: transform 0.3s;
+}
+
+.service-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #34495e;
+}
+
+.service-card p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+
+
+@media (max-width: 768px) {
+  .service-card {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  .service-card {
+    padding: 18px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Services</h1>
+    <p>We provide high-quality digital solutions tailored to your needs.</p>
+  </header>
+
+  <main class="services-container">
+
+    <!-- Service Card 1 -->
+    <section class="service-card">
+      <h2>Web Development</h2>
+      <p>We build responsive and SEO-friendly websites using modern technologies like HTML, CSS, JavaScript, and frameworks like React or Vue.</p>
+    </section>
+
+    <!-- Service Card 2 -->
+    <section class="service-card">
+      <h2>Mobile App Development</h2>
+      <p>Our team creates user-friendly Android and iOS apps with performance and design in mind, powered by Flutter or native stacks.</p>
+    </section>
+
+    <!-- Service Card 3 -->
+    <section class="service-card">
+      <h2>UI/UX Design</h2>
+      <p>Get visually engaging and user-centered designs for your digital products with clean interfaces and intuitive experiences.</p>
+    </section>
+
+    <!-- Service Card 4 -->
+    <section class="service-card">
+      <h2>Cloud Solutions</h2>
+      <p>We provide scalable cloud hosting and DevOps services to deploy, monitor, and scale your applications with ease.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DigitalEdge Solutions</p>
+  </footer>
+
+</body>
+</html>

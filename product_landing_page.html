@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperPhone X - Landing Page</title>
+    <style>
+        /* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header.hero {
+  background: #0078d7;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.cta-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: white;
+  color: #0078d7;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #005fa3;
+  color: white;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.product-info {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.signup {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form .form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.submit-btn {
+  padding: 0.75rem 1.5rem;
+  background: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #005fa3;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <h1>SuperPhone X</h1>
+        <p>The Future of Smartphones is Here</p>
+        <button class="cta-btn">Learn More</button>
+    </header>
+
+    <main>
+        <section class="product-info">
+            <h2>Why SuperPhone X?</h2>
+            <p>
+                SuperPhone X offers unmatched speed, AI-powered photography, and a sleek
+                all-glass design. Experience performance like never before with our
+                latest innovation.
+            </p>
+        </section>
+
+        <section class="signup">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="newsletter-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required />
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="agree" required />
+                        I agree to receive promotional emails.
+                    </label>
+                </div>
+                <input type="submit" value="Subscribe" class="submit-btn" />
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SuperPhone Inc. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Photo Gallery</title>
+    <style>
+        /* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gallery {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Basic layout using inline-block */
+.photo {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.photo img:hover{
+    box-shadow: 0 5px 5px;
+
+}
+
+/* Medium screens: 2 columns */
+@media (min-width: 600px) {
+  .photo {
+    width: 50%;
+  }
+}
+
+/* Large screens: 3 columns */
+@media (min-width: 900px) {
+  .photo {
+    width: 33.33%;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <h1 class="title">Simple Photo Gallery</h1>
+
+    <div class="gallery">
+        <div class="photo"><img src="download.jpg"></div>
+        <div class="photo"><img src="download.jpg"></div>
+        <div class="photo"><img src="download.jpg"></div>
+        <div class="photo"><img src="download.jpg"></div>
+        <div class="photo"><img src="download.jpg"></div>
+        <div class="photo"><img src="download.jpg"></div>
+    </div>
+
+</body>
+
+</html>

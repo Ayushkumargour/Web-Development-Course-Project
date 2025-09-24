@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple E-commerce Product Listing</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  transition: box-shadow 0.3s;
+}
+
+.product:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.product .description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.product .price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.product button {
+  padding: 10px 16px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background-color: #218838;
+}
+
+.sold-out {
+  opacity: 0.6;
+  pointer-events: none;
+  border: 2px dashed #aaa;
+}
+
+.sold-out .status {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ayush Gadget Store</h1>
+    <p>Top Picks for You!</p>
+  </header>
+
+  <main>
+    <section class="product-list">
+
+      <!-- Product 1 -->
+      <article class="product">
+        <h2>Wireless Earbuds</h2>
+        <p class="description">High-quality wireless earbuds with noise cancellation and long battery life.</p>
+        <p class="price">100 Rs</p>
+        <button>Add to Cart</button>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="product">
+        <h2>Smartwatch Pro</h2>
+        <p class="description">Track your fitness, get notifications, and more with this sleek smartwatch.</p>
+        <p class="price">200</p>
+        <button>Add to Cart</button>
+      </article>
+
+      <!-- Product 3 (Sold Out) -->
+      <article class="product sold-out" aria-disabled="true">
+        <h2>VR Headset</h2>
+        <p class="description">Experience immersive virtual reality with ultra HD lenses and comfort fit.</p>
+        <p class="price">300 Rs</p>
+        <span class="status">Sold Out</span>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="product">
+        <h2>Bluetooth Speaker</h2>
+        <p class="description">Portable speaker with powerful bass and waterproof design.</p>
+        <p class="price">300 Rs</p>
+        <button>Add to Cart</button>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="product">
+        <h2>4K Action Camera</h2>
+        <p class="description">Capture adventures in stunning 4K with this rugged action cam.</p>
+        <p class="price">78 Rs</p>
+        <button>Add to Cart</button>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ayush Gadget Store. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
