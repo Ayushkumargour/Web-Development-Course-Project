@@ -5,15 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Registration</title>
     <link rel="stylesheet" href="../css/login.css">
+
+    <style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .success {
+            color: green;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+
+    </style>
+
 </head>
+
 <body>
+
     <div class="container">
         <h1>Register</h1>
         <form id="registrationForm" onsubmit="return validateForm()">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-            <label for="email">College Email:</label>
+            <label for="email">Launched Email:</label>
             <input type="email" id="email" name="email" placeholder="Enter your college email" required>
             <div class="error" id="emailError"></div>
 
