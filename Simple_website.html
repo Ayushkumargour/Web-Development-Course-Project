@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Notes Hub - Your Learning Companion</title>
+    <link rel="stylesheet" href="simple_website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-left">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="header-top-right">
+                    <div class="language-selector">
+                        <select>
+                            <option value="en">English</option>
+                            <option value="es">Español</option>
+                            <option value="fr">Français</option>
+                        </select>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="support-link">
+                        <a href="#"><i class="fas fa-headset"></i> Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h2><i class="fas fa-graduation-cap"></i> StudyNotes Hub</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#subjects">Subjects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Slideshow -->
+    <section class="hero" id="home">
+        <div class="slideshow">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1523240798131-33771a4d0c6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+                <div class="slide-content">
+                    <h1>Welcome to StudyNotes Hub</h1>
+                    <p>Your comprehensive platform for accessing and managing study materials</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+                <div class="slide-content">
+                    <h1>Organized Learning</h1>
+                    <p>Find all your study materials in one place, organized by subjects</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+                <div class="slide-content">
+                    <h1>Easy Access</h1>
+                    <p>Download notes, presentations, and study guides with just one click</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slide-controls">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="slide-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <!-- Main Action Buttons -->
+        <div class="hero-actions">
+            <div class="container">
+                <div class="action-cards">
+                    <div class="action-card student-card" onclick="goToStudentSection()">
+                        <div class="card-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Student Access</h3>
+                        <p>Browse and download study materials</p>
+                        <button class="btn btn-primary">Enter as Student</button>
+                    </div>
+                    <div class="action-card teacher-card" onclick="goToTeacherSection()">
+                        <div class="card-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Teacher Portal</h3>
+                        <p>Manage subjects and upload materials</p>
+                        <button class="btn btn-secondary">Teacher Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About StudyNotes Hub</h2>
+                <p>Empowering education through organized digital learning</p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-folder-open"></i>
+                    <h3>Organized Subjects</h3>
+                    <p>All study materials are neatly organized by subjects for easy navigation</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-download"></i>
+                    <h3>Easy Downloads</h3>
+                    <p>Download study materials in various formats including PDF, DOC, and PPT</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-search"></i>
+                    <h3>Smart Search</h3>
+                    <p>Find exactly what you need with our powerful search functionality</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure Access</h3>
+                    <p>Your study materials are safe and accessible only to authorized users</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StudyNotes Hub</h3>
+                    <p>Your comprehensive platform for accessing and managing study materials.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#subjects">Subjects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@studynoteshub.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Education St, Learning City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 StudyNotes Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
